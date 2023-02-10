@@ -3,35 +3,51 @@
         <div class="header__container">
             
 
-                    <a class="logo" href="./index.html" alt="Go home">
+                    <a class="logo home" href="./index.html" alt="Go home">
                         <span class="accent">Skool</span>Timez
                     </a>
                 
-                <nav class="header__nav">
+                <div class="header__nav">
                     
                     <ul class="nav">
                         
                         <li class="nav__item current">
                             <a class="nav__item"  href="./index.html" alt="Home page">
-                            <div class="nav__icon">
-                                <img src="./images/vidget/nav-home.png" width="35">
-                            </div>
+                                <div class="nav__icon">
+                                    <svg class=".mob-menu-icon" width="48" height="48">
+                                        <use href="./images/icon.svg#icon-home"></use>
+                                    </svg>
+                                </div>
                             <span class="nav__link--gdisk">./index.html</span></a></li>
+
+
+                            <li class="nav__item">
+                                <a class="nav__item"  href="./it.html" alt="IT learning by doing">
+                                    <div class="nav__icon">
+                                        <svg class=".mob-menu-icon" width="48" height="48">
+                                            <use href="./images/icon.svg#icon-it"></use>
+                                        </svg>
+                                    </div>
+                                <span class="nav__link--gdisk">./it.html</span></a></li>
 
 
                         <li class="nav__item">
                             <a href="./timetable.html" class="nav__item" alt="My timetable">
-                            <div class="nav__icon">
-                                <img src="./images/vidget/nav-time-tab.png" width="85">
-                            </div>
+                                <div class="nav__icon">
+                                    <svg class=".mob-menu-icon" width="48" height="48">
+                                        <use href="./images/icon.svg#icon-timetable"></use>
+                                    </svg>
+                                </div>
                             <span class="nav__link--gdisk" >./timetable.html</span>
                              </a>
                         </li>
                         <li class="nav__item">
                             <a href="./guide.html"
                              class="nav__item" alt="How to do instruction">
-                            <div class="nav__icon">
-                                <img src="./images/vidget/nav-guide.png" width="35">
+                             <div class="nav__icon">
+                                <svg class=".mob-menu-icon" width="48" height="48">
+                                    <use href="./images/icon.svg#icon-flower"></use>
+                                </svg>
                             </div>
                       <span class="nav__link--gdisk">./guide.html</span>   </a>
                            
@@ -40,23 +56,108 @@
                             <a href="./storage.html"
                             class="nav__item" alt="My files">
                             <div class="nav__icon">
-                                <img src="./images/vidget/nav-myFolder.png" width="35">
+                                <svg class=".mob-menu-icon" width="48" height="48">
+                                    <use href="./images/icon.svg#icon-docs"></use>
+                                </svg>
                             </div>
                             <span class="nav__link--gdisk">./storage.html</span></a>
                         </li>
                        
                         
                     </ul>
-                </nav> 
-                <div class="menu-btn">
-                    <svg class="menu-icon" width="48" height="48">
-                        <use href="../images/icon.svg#icon-flower"></use>
+                </div> 
+                <button type="button" class="menu-btn" data-popup-open>
+                    <svg class="menu-icon rotate180"  width="48" height="48">
+                        <use href="./images/icon.svg#icon-steps"></use>
+                        
                     </svg>
+                </button>
                 </div>
 
+                
                 
 
          
         </div>   
     </div>  
+
+     <!-- pop-up menu -->
+    <div class="mob-modal is-hidden" data-popup>
+        <button type="button" class="close__button" data-popup-close>
+            <svg width="24" height="16">
+                <use href="./images/icon.svg#icon__menu--close"></use>
+            </svg>
+        </button>
+       
+        
+            <ul class="mob-menu__nav">
+                        
+                <li class="mob-nav__item current">
+                  
+                    <div class="nav__icon">
+                        <svg class=".mob-menu-icon" width="48" height="48">
+                            <use href="./images/icon.svg#icon-home"></use>
+                        </svg>
+                    </div>
+                    <a class="mob-menu__link"  href="./index.html" alt="Home page">
+                    ./index.html
+                    </a>
+                </li>
+
+
+                <li class="mob-nav__item">
+                 <div class="nav__icon">
+                            <svg class=".mob-menu-icon" width="48" height="48">
+                                <use href="./images/icon.svg#icon-it"></use>
+                            </svg>
+                        </div>
+                        <a class="mob-menu__link"  href="./it.html" alt="IT learning by doing">
+                        
+                       ./it.html
+                    </a>
+                </li>
+
+
+                <li class="mob-nav__item">
+                <div class="nav__icon">
+                        <svg class=".mob-menu-icon" width="48" height="48">
+                            <use href="./images/icon.svg#icon-timetable"></use>
+                        </svg>
+                    </div>
+                    <a href="./timetable.html" class="mob-menu__link" alt="My timetable">
+                        ./timetable.html</span>
+                 </a>
+                </li>
+                <li class="mob-nav__item">
+             <div class="nav__icon">
+                        <svg class=".mob-menu-icon" width="48" height="48">
+                           <use href="./images/icon.svg#icon-flower"></use>
+                        </svg>
+                    </div>
+                    <a href="./guide.html"
+                    class="mob-menu__link" alt="How to do instruction">
+                     ./guide.html</span>      
+                </a>
+               
+                </li>
+                <li class="mob-nav__item">
+              
+                <div class="nav__icon">
+                    <svg class=".mob-menu-icon" width="48" height="48">
+                        <use href="./images/icon.svg#icon-docs"></use>
+                    </svg>
+                </div>
+                <a href="./storage.html"
+                class="mob-menu__link" alt="My files">./storage.html</span>
+                </a>
+                </li>
+           
+            
+            </ul> 
+        
+    </div>
+         
+        
+
+
 </header>
