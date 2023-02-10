@@ -1,0 +1,56 @@
+/* !!!-------------footer-----------!!!! */
+.footer {
+    
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: rgb(122, 76, 6);;
+    
+}
+
+.footer-container{
+    display: flex;
+
+   
+    border-radius: 0 0 15px 15px;
+
+    padding: 30px 15px;
+    gap: 30px;
+    @media screen and (max-width:479px) {
+    flex-direction: column;
+    }
+        @media screen and (min-width:480px){
+            flex-wrap: wrap;
+            align-items: baseline;
+                justify-content: space-between;
+            row-gap: 15px;
+        }
+}
+
+.footer-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.footer-block__title{
+    display: block;
+    color: white;
+    font-weight: 14px;
+    letter-spacing: 1px;
+    font-family: 'Pangolin', cursive;
+}
+
+
+.time-btn{
+    width: 20px;
+    height: 20px;
+}
+
+.time-icon{
+    fill: white;
+    width: 100%;
+    height: 100%;
+}

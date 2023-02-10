@@ -1,0 +1,91 @@
+.main-info__section{
+    height: auto;
+    background-color: white;
+
+    padding-bottom: 0;
+    
+}
+
+.main-info__container{
+    border: 3px solid tomato;
+    background-color: gray;
+    border-radius: 25px 25px 0 0;
+    padding: 15px;
+    border-bottom: 0;
+    padding-bottom: 5px;
+
+    position: relative;
+}
+
+.main-info__list{
+    
+    display: flex;
+
+    gap: 12px;
+    @media screen and(max-width:479px) {
+    flex-direction: column;
+    }
+    @include mobile{
+        flex-wrap: wrap;
+    }
+    
+}
+
+.main-info__item{
+    display: flex;
+    
+    gap: 5px;
+
+    @media screen and(max-width:479px) {
+        flex-direction: column;
+    }
+
+    @include mobile{
+        flex-direction: row;
+        align-items:center;
+        gap: 15px;
+    }
+
+    @include desktop{
+   
+    }
+}
+
+
+
+.category__title{
+    color: tomato;
+    font-family: 'Pangolin', cursive;
+    font-size: 12px;
+    text-transform: uppercase;
+
+    display: inline-block;
+    background-color: white;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.main-info__content{
+    color: white;
+}
+
+.lesson__name{
+    color: white;
+    font-family: 'Finger Paint', cursive;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.lesson__stats{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    line-height: 1.12;
+    color: white;
+
+    display: block;
+    width: 100%;
+    margin-bottom: 21px;
+    padding: 3px 12px;
+    border-radius: 9px 9px 0 0;
+    background-color: rgba(245, 240, 240, 0.5);
+}

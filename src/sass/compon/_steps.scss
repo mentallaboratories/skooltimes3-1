@@ -1,0 +1,243 @@
+.step-section{
+    padding: 7px 0;
+    //background-color: $darkBrownColor;
+    overflow: hidden;
+    
+  
+    @include mobile{
+        display: flex;
+    
+        justify-content: space-between;
+        overflow: hidden;
+        //row-gap: 10px;
+    }
+
+
+   
+    // & > li{
+    //     display: block;
+    // }
+}
+
+
+.steps-icon{
+    fill:white;
+    width: 22px;
+    height: 22px;
+}
+
+.rotate45{
+    transform: rotate(45deg);
+}
+
+.rotate90{
+    transform: rotate(90deg);
+}
+
+.rotate180{
+    transform: rotate(180deg);
+}
+
+.step-first{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    //border: 3px solid white;
+    padding: 7px;
+    border-radius: 50%;
+    //border: 3px solid white;
+    border-width: 3px;
+    border-style: solid;
+   // border-color: conic-gradient(green 20%, $darkBrownColor 0);
+
+    height: 58px;
+    width: 58px;
+
+  //  background: url(../images/icons/flower.svg), conic-gradient(green 20%, $darkBrownColor 0);
+
+   // background-image: url(../images/icons/flower.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-size: 54px 54px;
+
+    & .steps-icon{
+        fill: white;
+        // stroke: $yellowColor;
+        // stroke-width: 2px;
+    }
+}
+
+
+
+
+.step{
+    position: relative;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid white;
+    padding: 2px;
+    border-radius: 7px;
+
+    width: 32px;
+    height: 32px;
+
+    & ::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        // display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: rgba($color: #099e15, $alpha: 0.5);
+        border: 1px solid white;
+
+        display: none;
+    }
+   
+  
+
+  
+}
+
+
+.steps-thumbs{
+    @include mobile__style--off{
+       display: block;
+        width: 100%;
+        
+    } 
+    @include mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+    @include tablet{
+    
+    
+    }
+}
+
+.step-thumb{
+    height: 100px;
+    padding: 5px;
+    border-radius: 12px;
+    border: 1px solid white;
+    margin-bottom: 7px;
+    
+    @include mobile__style--off{
+        
+        display: block;
+        width: 100%;
+    }
+
+    @include mobile{
+        width: calc((100% - 40px)/2);
+    }
+
+    @include tablet{
+        width: calc((100% - 80px)/3);
+    }
+}
+
+.done{
+    border: 1px solid green;
+
+    & .steps-icon{
+        fill: green;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -50%;
+
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        border: 1px solid green;
+        background-image: url(../images/icons/icon-done.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px 10px;
+
+        border-radius: 4px;
+    }
+
+}
+
+.processing{
+    background-color: yellow;
+    border: 1px solid yellow;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -50%;
+
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        border: 1px solid yellow;
+        background-image: url(../images/icons/gears.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px 10px;
+
+        border-radius: 4px;
+    }
+}
+
+.undone{
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -30%;
+
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        //border: 1px solid white;
+        background-image: url(../images/icons/question.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px 10px;
+
+        border-radius: 4px;
+    }
+}
+
+.step-link-title{
+    background-color: $yellowColor;
+}
+
+.steps{
+    padding: 3px 0;
+   // background-color: $darkBrownColor;
+    display: flex;
+    align-items: space-between;
+    gap: 30px;
+    justify-content: flex-start;
+
+        flex-wrap: wrap;
+}
+
+.step-link{
+    font-size: 10px;
+    line-height: 1.16;
+}

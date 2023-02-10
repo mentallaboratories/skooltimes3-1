@@ -1,0 +1,27 @@
+.link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color $commonTransition;
+}
+
+.recent-links{
+    padding: 3px 0;
+    background-color: $darkBrownColor;
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: center;
+    align-items: center;
+    gap: 27px;
+    overflow: hidden;
+    row-gap: 10px;
+    // & > li{
+    //     display: block;
+    // }
+}
+
+.recent-link{
+    font-size: 10px;
+    line-height: 1.16;
+}

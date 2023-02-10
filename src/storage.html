@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Freckle+Face&family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;600&family=Pangolin&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container ">
+            <div class="header__container">
+                
+    
+                        <a class="logo home" href="./index.html" alt="Go home">
+                            <span class="accent">Skool</span>Timez
+                        </a>
+                    
+                    <div class="header__nav">
+                        
+                        <ul class="nav">
+                            
+                            <li class="nav__item">
+                                <a class="nav__item"  href="./index.html" alt="Home page">
+                                    <div class="nav__icon">
+                                        <svg class=".mob-menu-icon" width="48" height="48">
+                                            <use href="../images/icon.svg#icon-home"></use>
+                                        </svg>
+                                    </div>
+                                <span class="nav__link--gdisk">./index.html</span></a></li>
+
+
+                                <li class="nav__item">
+                                    <a class="nav__item"  href="./it.html" alt="IT learning by doing">
+                                        <div class="nav__icon">
+                                            <svg class=".mob-menu-icon" width="48" height="48">
+                                                <use href="../images/icon.svg#icon-it"></use>
+                                            </svg>
+                                        </div>
+                                    <span class="nav__link--gdisk">./it.html</span></a></li>
+    
+    
+                            <li class="nav__item">
+                                <a href="./timetable.html" class="nav__item" alt="My timetable">
+                                    <div class="nav__icon">
+                                        <svg class=".mob-menu-icon" width="48" height="48">
+                                            <use href="../images/icon.svg#icon-timetable"></use>
+                                        </svg>
+                                    </div>
+                                <span class="nav__link--gdisk" >./timetable.html</span>
+                                 </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./guide.html"
+                                 class="nav__item" alt="How to do instruction">
+                                 <div class="nav__icon">
+                                    <svg class=".mob-menu-icon" width="48" height="48">
+                                        <use href="../images/icon.svg#icon-flower"></use>
+                                    </svg>
+                                </div>
+                          <span class="nav__link--gdisk">./guide.html</span>   </a>
+                               
+                            </li>
+                            <li class="nav__item current">
+                                <a href="./storage.html"
+                                class="nav__item" alt="My files">
+                                <div class="nav__icon">
+                                    <svg class=".mob-menu-icon" width="48" height="48">
+                                        <use href="../images/icon.svg#icon-docs"></use>
+                                    </svg>
+                                </div>
+                                <span class="nav__link--gdisk">./storage.html</span></a>
+                            </li>
+                           
+                            
+                        </ul>
+                    </div> 
+                    <button type="button" class="menu-btn" data-popup-open>
+                        <svg class="menu-icon rotate180"  width="48" height="48">
+                            <use href="../images/icon.svg#icon-steps"></use>
+                        </svg>
+                    </button>
+                    </div>
+    
+                    
+                    
+
+             
+            </div>   
+        </div>  
+
+         <!-- pop-up menu -->
+        <div class="mob-modal is-hidden" data-popup>
+            <button type="button" class="close__button" data-popup-close>
+                <svg width="24" height="16">
+                    <use href="./images/icon.svg#icon__menu--close"></use>
+                </svg>
+            </button>
+           
+            
+                <ul class="mob-menu__nav">
+                            
+                    <li class="mob-nav__item">
+                      
+                        <div class="nav__icon">
+                            <svg class=".mob-menu-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-home"></use>
+                            </svg>
+                        </div>
+                        <a class="mob-menu__link"  href="./index.html" alt="Home page">
+                        ./index.html
+                        </a>
+                    </li>
+
+
+                    <li class="mob-nav__item">
+                     <div class="nav__icon">
+                                <svg class=".mob-menu-icon" width="48" height="48">
+                                    <use href="../images/icon.svg#icon-it"></use>
+                                </svg>
+                            </div>
+                            <a class="mob-menu__link"  href="./it.html" alt="IT learning by doing">
+                            
+                           ./it.html
+                        </a>
+                    </li>
+
+
+                    <li class="mob-nav__item">
+                    <div class="nav__icon">
+                            <svg class=".mob-menu-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-timetable"></use>
+                            </svg>
+                        </div>
+                        <a href="./timetable.html" class="mob-menu__link" alt="My timetable">
+                            ./timetable.html</span>
+                     </a>
+                    </li>
+                    <li class="mob-nav__item">
+                 <div class="nav__icon">
+                            <svg class=".mob-menu-icon" width="48" height="48">
+                               <use href="../images/icon.svg#icon-flower"></use>
+                            </svg>
+                        </div>
+                        <a href="./guide.html"
+                        class="mob-menu__link" alt="How to do instruction">
+                         ./guide.html</span>      
+                    </a>
+                   
+                    </li>
+                    <li class="mob-nav__item current">
+                  
+                    <div class="nav__icon">
+                        <svg class=".mob-menu-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-docs"></use>
+                        </svg>
+                    </div>
+                    <a href="./storage.html"
+                    class="mob-menu__link" alt="My files">./storage.html</span>
+                    </a>
+                    </li>
+               
+                
+                </ul> 
+            
+        </div>
+             
+            
+        
+
+    </header>
+
+
+
+    <main>
+        <!-- brown-white horisontal link bar -->
+
+
+        <section class="section recent-links">
+            <div class="container">
+                    <ul class="recent-links">
+                        <li class="section-icon-wrap">
+                            <svg class="section-icon rotate45" width="48" height="48">
+                                <use href="../images/icon.svg#icon-link"></use>
+                            </svg>
+                            <h4 class="recent-link-title it-font">Useful Links</h4>
+                        </li>
+                        <li><a class="recent-link it-font"href="https://www.youtube.com/" title="URL adress"> https://www.youtube.com/</a>
+                        </li>
+                        <li> <a class="recent-link it-font" href="https://www.google.com.ua/"> https://www.google.com.ua/</a>
+                        </li>
+                        <li><a class="recent-link it-font" href="https://translate.google.com/">  https://translate.google.com/ </a></li>
+                        <li class="section-icon-wrap">
+                             <svg class="section-icon rotate45" width="48" height="48">
+                            <use href="../images/icon.svg#icon-find"></use>
+                        </svg>
+                        <h4 class="recent-link-title it-font">Find with a Browser</h4>
+                    </li>
+                        <li><a class="recent-link it-font" href="#">  Ph7: Project </a></li>
+                        <li><a class="recent-link it-font" href="#">  E5: Listening </a></li>
+                    </ul>
+            </div>
+        </section> 
+        <section class="section">
+            <div class="container">
+                <div class="flex-row">
+                    <div class="section-thumb">
+                        <h1 class="section-title skill-up">Storing your content</h1>
+                        <h2 class="section-aim">Learn how to save you work</h2>
+                        <p class="section-info">'myFolder' is a folder that...</p>
+                    </div>
+                    <div class="doc-block">
+                        <div class="doc-thumb">
+                          
+                           
+                            <h3 class="footer-block__title">Documentation.</h3>
+        
+                            <div class="set-btn">
+                                <svg class="set-icon" width="48" height="48">
+                                    <use href="../images/icon.svg#icon-docs"></use>
+                                </svg>
+                            </div>
+                            
+                        </div>
+                        <ul class="doc-list">
+                            <li class="doc-item">
+                                <h4 class="doc-class">Class Registers</h4>
+        
+                                    <ul class="doc-name-list">
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">1st class</a></li>
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">2nd year</a></li>
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">3rd grade</a></li>
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">Year 4</a></li>
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">Year 5</a></li>
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">6th Form</a></li>
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">7th Class</a></li>
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">Form 8</a></li>
+                                        <li class="doc-name-item"><a class="doc-name-link" href="">Class 9</a></li>
+                                    </ul>
+                            </li>
+                            <li class="doc-item">
+                                <h4 class="doc-class">Study Plans</h4>
+        
+                                <ul class="doc-name-list">
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">English 1-4. Level A1</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">English 5-7. Level A2</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">English 8-9. Level B1</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">IT 5-6. Beginner User</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">IT 7-9. Intermediate User</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">Physics 7. Basics, SI, Forces</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">Physics 8. Energy and electricity</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">Physics 9. Magnets, Light, Waves</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">STEM</a></li>
+                                </ul>
+                            </li>
+                            <li class="doc-item">
+                                <h4 class="doc-class">Common Lesson Plans</h4>
+                                
+        
+                                <ul class="doc-name-list">
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">mixed</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">lecture</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">revision</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">testing</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">practice</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">experiment</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">quest</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">quizz</a></li>
+                                    <li class="doc-name-item"><a class="doc-name-link" href="">project</a></li>
+                                </ul>
+            
+                            </li>
+        
+                           
+                            </ul>
+                        </div>
+                    
+                </div>
+                <div class="footer-block">
+                    <h3 class="footer-block__title">Language skills</h3>
+                    <!-- <div class="title__icons"><img src="./images/subj/ESL.png" width="35"></div> -->
+                    <ul class="skills__list">
+                        <li class="title__icons"><img src="./images/vidget/nav-myFolder.png" width="35"></li>
+                        <li class="skills__icons"><img src="./images/layout/comp-pc.png" width="35"></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </section> 
+
+        
+        <!-- <section class="section timetable__section">
+            <div class="container timetable__container">
+                <div class="timetable-img">
+                    <img src="./images/layout-components/timetable.png" width="120">
+                    </div>
+                <div class="timetable-info">
+                    <h4 class="timetable-title">Mn -> Tue -> Wed -> <span class="timetable-title__day">THURSDAY, the tenth of November</span> <span class="timetable-title__fut">-> Fr</span> </h4>
+                    <ol class="timetable-list">
+                        
+                        <li class="timetible-lesson">
+                            <a class="lesson__link" alt="7classEnglish" href="./health7.html">english | 1 | __  H, I</a>
+                        </li>
+                        <li class="timetible-lesson">
+                            <a class="lesson__link" alt="7classEnglish" href="./health7.html">english | 3 | __  Goldilocks and bears</a>
+                        </li>
+                        <li class="timetible-lesson">
+                            <a class="lesson__link" alt="7classEnglish" href="./health7.html">english | 4 | __  Furniture</a>
+                        </li>
+                        <li class="timetible-lesson">
+                            <a class="lesson__link" alt="7classEnglish" href="./health7.html">english | 2 | __  Time</a>
+                        </li>
+                        <li class="timetible-lesson">
+                            <a class="lesson__link" alt="7classEnglish" href="./health7.html">english | 7 | __  Health. Visit to doctor</a>
+                        </li>
+                        <li class="timetible-lesson">
+                            <a class="lesson__link" alt="7classEnglish" href="./health7.html">it      | 8 | __  Word. Lists. Find-replace</a>
+                        </li>
+                    </ol>
+        </section> -->
+                
+        <!-- <section class="section main-info__section">
+            <div class="container main-info__container">
+                <div class="lesson__stats">
+                    SUBJ: english | CLASS: 6 | NUMBER: 34 | DATE: 09.11.2022 | STATUS: undone
+                </div>
+                <ul class="main-info__list">
+                    <li class="main-info__item">
+                            <h3 class="category__title">name:</h3>
+                            <h1 class="lesson__name">My Eating Habits</h1>
+                    </li>
+                    <li class="main-info__item main-info__header">
+                        <h3 class="category__title">goals:</h3>
+         
+                        <p class="main-info__content">Write a message about your eating habits</p>
+                    </li>
+                    <div class="skills__icons--decor">
+                        <img src="./images/status-icons/complete.png" width="35">
+                    </div>
+                    <div class="skills__icons--decor">
+                        <img src="./images/status-icons/complete.png" width="35">
+                    </div>
+                    <li class="main-info__item">
+                        <h3 class="category__title">reference:</h3>
+                        <p class="main-info__content">Manual A Karpuk for the 6-th form</p>
+                    </li> 
+                    
+                
+             
+
+        </section>-->
+        <!-- lesson-plan__section -->
+        
+       
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            
+            <!-- subjects -->
+            <div class="footer-block">
+            <h3 class="footer-block__title">School Timetable. Subjects</h3>
+            <ul class="skills__list">
+                <li><div class="set-btn">
+                    <svg class="set-icon" width="48" height="48">
+                        <use href="../images/icon.svg#icon-docs"></use>
+                    </svg>
+
+                </div></li>
+                <li><div class="routine-btn create__mode">
+                    <svg class="routine-icon" width="48" height="48">
+                        <use href="../images/icon.svg#icon-british-fl"></use>
+                    </svg>
+
+                </div></li>
+                <li><div class="routine-btn create__mode">
+                    <svg class="routine-icon" width="48" height="48">
+                        <use href="../images/icon.svg#icon-ukr-fl"></use>
+                    </svg>
+
+                </div></li>
+
+                <li><div class="routine-btn create__mode">
+                    <svg class="routine-icon" width="48" height="48">
+                        <use href="../images/icon.svg#icon-it"></use>
+                    </svg>
+
+                </div></li>
+
+                <li><div class="routine-btn create__mode">
+                    <svg class="routine-icon" width="48" height="48">
+                        <use href="../images/icon.svg#icon-physics"></use>
+                    </svg>
+
+                </div></li>
+            </ul>
+            </div>
+
+<!-- blooom tax -->
+            <div class="footer-block">
+                <h3 class="footer-block__title">Learning skill levels (Based on Bloom taxonomy)</h3>
+                <ul class="mob-menu-list">
+                    <li>
+                        <div class="set-btn">
+                            <svg class="set-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-flower"></use>
+                            </svg>
+                        </div>
+                    </li>
+                   
+                    
+                    <li>
+                        <div class="routine-btn remember__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-head"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="routine-btn understand__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-gears"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="routine-btn apply__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-steps"></use>
+                            </svg>
+
+                        </div>
+                      
+                    </li>
+
+                    <li>
+                        <div class="routine-btn analize__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-planning"></use>
+                            </svg>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="routine-btn evaluate__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-estimate"></use>
+                            </svg>
+<!-- 
+                            <img class="routine-icon"  src="./images/estimate-icon.svg" alt="estimate skillset" width="42"> -->
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="routine-btn create__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-portfolio"></use>
+                            </svg>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer-block">
+                <h3 class="footer-block__title">IT skills and tools</h3>
+                <ul class="skills__list">
+                    <li><div class="set-btn">
+                        <svg class="set-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-it"></use>
+                        </svg>
+    
+                    </div></li>
+                    <li><div class="routine-btn create__mode">
+                        <svg class="routine-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-exlamation"></use>
+                        </svg>
+    
+                    </div></li>
+                    <li><div class="routine-btn create__mode">
+                        <svg class="routine-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-input"></use>
+                        </svg>
+    
+                    </div></li>
+    
+                    <li><div class="routine-btn create__mode">
+                        <svg class="routine-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-processing"></use>
+                        </svg>
+    
+                    </div></li>
+    
+                    <li><div class="routine-btn create__mode">
+                        <svg class="routine-icon" width="48" height="48">
+                            <use href="../images/icon.svg#icon-output"></use>
+                        </svg>
+    
+                    </div></li>
+
+                </ul>
+                </div>
+            <!-- Measuring -->
+            <div class="footer-block">
+                <h3 class="footer-block__title">Planning. Time management</h3>
+                <ul class="mob-menu-list">
+                    <li>
+                        <div class="time-btn">
+                            <svg class="time-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-clock"></use>
+                            </svg>
+                            
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="time-btn">
+                            <svg class="time-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-second"></use>
+                            </svg>
+                            
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="time-btn">
+                            <svg class="time-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-calendar"></use>
+                            </svg>
+                           
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="time-btn">
+                            <svg class="time-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-timetable"></use>
+                            </svg>
+                           
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            
+            <!-- Communicative skills -->
+            <div class="footer-block">
+                <h3 class="footer-block__title">Language skills</h3>
+                <ul class="mob-menu-list">
+                    <li>
+                        <div class="set-btn">
+                            <svg class="set-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-british-fl"></use>
+                            </svg>
+                        </div>
+                    </li>
+                   
+                    
+                    <li>
+                        <div class="routine-btn remember__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-listening-skill"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="routine-btn understand__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-reading-skill"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="routine-btn apply__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-speaking-skill"></use>
+                            </svg>
+
+                        </div>
+                      
+                    </li>
+
+                    <li>
+                        <div class="routine-btn analize__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-writing-skill"></use>
+                            </svg>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="routine-btn evaluate__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-vocab-skill"></use>
+                            </svg>
+<!-- 
+                            <img class="routine-icon"  src="./images/estimate-icon.svg" alt="estimate skillset" width="42"> -->
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="routine-btn create__mode">
+                            <svg class="routine-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-gears"></use>
+                            </svg>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Status Icons -->
+            <div class="footer-block">
+                <h3 class="footer-block__title">Function Icons</h3>
+                <ul class="mob-menu-list">
+
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-done"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-exlamation"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-question"></use>
+                            </svg>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-minus"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-multiply"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-divide"></use>
+                            </svg>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="symbols">
+                            <svg class="symbol-icon" width="48" height="48">
+                                <use href="../images/icon.svg#icon-arrow"></use>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+            
+        <!-- <script src="./js/objects.js"></script>;      -->
+        <!-- <script src="./js/userFunc.js"></script>;   -->
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            
+            <form class="form" autocomplete="off">
+                <button type="button" class="close__button" data-modal-close>
+                    <svg class="close__icon" width="18" height="18">
+                        <use href="./images/icon.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h3 class="form__title">Залиште свої дані, ми вам передзвонимо</h3>
+                <div>
+                    <div class="form__item">
+                        <label class="form__label" for="name">Ім'я</label>
+                        <input class="form__input" name="name" type="text" id="name">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icon.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="tel">Телефон</label>
+                        <input class="form__input" name="tel" type="tel" id="tel"> 
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icon.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="bd-email">Пошта</label>
+                        <input class="form__input" name="bd-email" type="email" id="bd-email">
+                        <svg class="input-icon" width="18" height="18">
+                            <use href="./images/icon.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                    <div class="form__item form__comment">
+                        <label class="form__label" for="bd-ta">Коментар</label>
+                        <textarea class="form__textarea" name="backdrop-textarea" id="bd-ta" placeholder="Введіть текст"></textarea>
+                    </div>
+                    <div class="form__validation">
+                        <label class="validation" for="bd-chb">
+                            <input class="validation__input" type="checkbox" name="backdrop-checkbox" id="bd-chb" value="terms">
+                            <span class="validation__icon"></span>
+                            
+                            
+                            Погоджуюся з розсилкою та приймаю <a class="form__link" href="">Умови договору</a>
+                        </label>
+                    </div>
+                </div>
+               
+                
+                <button class="button form__submit" type="submit">Відправити</button>
+                
+            </form>
+
+            
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/popup.js"></script>
+</body>
+</html>

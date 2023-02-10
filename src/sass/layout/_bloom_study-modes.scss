@@ -1,0 +1,97 @@
+.bloom{
+    padding: 3px 16px;
+    display: block;
+    width: calc((100% - 20px)/3);
+
+    border: 3px solid white;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+
+
+
+.bloom-routines{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.remember__mode{
+    fill: purple;
+    border-color: purple;
+    color: purple;
+    background-color: orange;
+}
+
+.understand__mode{
+    fill: blue;
+    border-color: blue;
+    color: blue;
+}
+
+.apply__mode{
+    fill: green;
+    border-color: green;
+    color: green;
+}
+
+.analize__mode{
+    fill: yellow;
+    border-color: yellow;
+    color: yellow;
+}
+
+.evaluate__mode{
+    fill: orange;
+    border-color: orange;
+    color: orange;
+}
+
+.create__mode{
+    fill: tomato;
+    border-color: tomato;
+    color: tomato;
+}
+
+
+
+
+.routine-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.16;
+    color: gray;
+}
+
+.mode-routines{
+    padding: 3px 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 1.1;
+    color: white;
+
+    
+}
+
+.set-icon{
+    stroke: $darkBrownColor;
+    fill: $yellowColor;
+    width: 90%;
+    height: 90%;
+   
+}
+
+.set-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid $darkBrownColor;
+}
+
+

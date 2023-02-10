@@ -1,0 +1,125 @@
+.hero-section {
+    margin: 0 auto;
+    padding: 0 6px;
+    width: 100%;
+    //height: $mobHeight;
+    min-width: 256px;
+
+  
+    max-width: 1200px;
+
+    display: block;
+    align-items: baseline;
+    @include tablet{
+        height: $tabHeight;
+    }
+    
+   
+    @include desktop{
+        
+         height: $pcHeight;
+    }
+           
+}
+
+.hero__container{
+    display: block;
+   width: 100%;
+   height: 100%;
+
+    display: block;
+    
+    @include mobile{
+        
+        display: flex;
+    align-items:center;
+    justify-content:space-between;
+    }
+
+    @include tablet{
+        align-items:baseline;
+    }
+}
+
+.hero-content{
+//     margin: 0 auto;
+//     display: block;
+//     width: 1200px;
+//     height: 800px;
+//margin-top: 65px;
+
+@include desktop{
+//    margin-top: 65px;
+}
+}
+
+.hero-top-menu{
+    display: block;
+    width: 100%;
+    height: 65px;
+
+    background-color: red;
+}
+
+.guide__bg{
+    background:  url(../images/map-bg.jpg), linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,121,9,0.7) 21%, rgba(13,83,5,1) 100%);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.home__bg{
+    background-size: 460px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:  url(../images/layout/bookshelf.png);
+
+    @include tablet{
+        background-size: 760px;
+    background-image:  url(../images/layout/layout-lesson.png);
+    }
+    @include desktop{
+        background-size: 1200px;
+    background-image:  url(../images/layout/study.png);
+    }
+   
+  
+}
+
+.gadget__bg{
+    background-size: $mobWidth $mobHeight;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image:  url(../images/layout/smphone.svg);
+
+    @include tablet{
+    background-size: $tabWidth $tabHeight;
+    background-image:  url(../images/layout/tab.svg);
+}
+    @include desktop{
+       background-size: $pcWidth $pcHeight;
+    background-image:  url(../images/layout/comp-pc.svg);
+    }
+   
+  
+}
+
+
+.timetable__bg{
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: center 150px;
+    background:  url(../images/layout/study.png);
+    background-size: cover;
+}
+
+.storage__bg{
+    background-size:100vw;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-image:  url(../images/layout/storage.jpg);
+    
+   
+  
+}

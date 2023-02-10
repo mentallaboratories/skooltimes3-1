@@ -1,0 +1,135 @@
+.nav{
+    position: relative;
+    display: flex;
+    //flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include desktop{
+        //flex-direction: row;
+    }
+  
+}
+
+.nav__item{
+    position: relative;
+    display: none;
+
+    &:hover .mob-menu-icon, &:focus,
+        &:focus .mob-menu-icon, &:hover
+         {
+            fill: white;
+    };
+
+
+    &:hover .nav__link--gdisk,
+        &:focus .nav__link--gdisk
+         {
+            color: white;
+    };
+
+
+  @include tablet{
+  
+    border-radius: 12px;
+    padding: 1px 3px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgba($color: $yellowColor, $alpha: 0.7);
+   }
+
+   @include desktop{
+    
+    //flex-direction: row;
+    border: 1px single gray;
+    background-color: transparent;
+    
+ }
+
+}
+
+.mob-menu-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+   
+
+
+.nav__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    @include tablet{
+        width: 40px;
+    }
+    @include desktop{
+        // width: 36px;
+    }
+    
+}
+
+.nav__link{
+    @include desktop__style--off {
+    display: none;
+    }
+    @include tablet{
+    font-family: 'Finger Paint', cursive;
+    font-size: 18px;
+    line-height: 1.17;
+    color: tomato;
+}
+}
+
+.gservices{
+    display: flex;
+
+    gap: 35px;
+}
+
+.gservices-it{
+
+}
+
+
+.gservices-wra{
+    display: block;
+    width: 45px;
+    height: 45px;
+
+}
+.gdisk-links{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    
+}
+
+.nav__link--gdisk{
+    display: none;
+   
+    @include desktop{
+    display: block;
+    height: 18px;
+
+    border-radius: 3px;
+    //background-color: gray;
+    color: $darkBrownColor;
+
+    padding: 3px 5px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    line-height: 1.12;
+
+    
+    //font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+}

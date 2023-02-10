@@ -1,0 +1,37 @@
+.timetable__container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.timetable-img{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timetable-thursday{
+    font-family: 'Finger Paint', cursive;
+}
+
+.timetable-title__past{
+    margin-bottom: 5px;
+    color: gray;
+    font-size: 14px;
+    border-bottom: 3px solid green;
+}
+
+.timetable-title__day {
+    margin-bottom: 5px;
+    color: tomato;
+    font-family: 'Pangolin', cursive;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.timetable-title__fut {
+    margin-bottom: 5px;
+    color: black;
+    font-size: 14px;
+}

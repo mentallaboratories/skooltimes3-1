@@ -1,0 +1,52 @@
+/* !!!-------------footer-----------!!!! */
+.skillbox {
+    
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
+.skillbox-img {
+    width: 50%;
+}
+
+.skillbox-container{
+    width: 300px;
+    display: flex;
+
+    background-color: tomato;
+    border-radius: 0 0 15px 15px;
+
+    padding: 30px 15px;
+    gap: 30px;
+    @media screen and (max-width:479px) {
+    flex-direction: column;
+    }
+        @media screen and (min-width:480px){
+            flex-wrap: wrap;
+            align-items: baseline;
+                justify-content: space-between;
+            row-gap: 15px;
+        }
+}
+
+.skillbox-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.skillbox-block__title{
+    display: inline-block;
+    //width: 150px;
+    color: black;
+    font-weight: 14px;
+    letter-spacing: 1px;
+    font-family: 'Pangolin', cursive;
+}
+
+.skills-list{
+    display: flex;
+}

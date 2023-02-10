@@ -1,0 +1,85 @@
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 100%;
+
+
+    @include mobile {
+            width: 480px;
+    
+        }
+
+    @include tablet {
+            width: 768px;
+        
+        }
+    @include desktop {
+            width: 1200px;
+        }
+
+   
+}
+
+
+.cardset {
+        display: block;
+        @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }   
+}
+
+.accent {
+    color: orangered;
+}
+
+.current {
+    color: rgb(122, 76, 6);
+    border: 3px solid rgb(32, 20, 2);
+    background-color: $yellowColor;
+}
+
+body {
+    background-color: $backgroundColor;
+    font-family: 'Montserrat';
+    color: $plainTextColor;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.icon-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 15px;
+    height: 15px;
+}
+
+.icon-cont-part{
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+.done{
+    fill:green;
+}
+
+.undone{
+    fill:white;
+}
+
+

@@ -1,0 +1,156 @@
+.section {
+    padding: 20px 0;
+    @include desktop{
+        padding: 44px 0;
+    }
+}
+
+// .section__title {
+    
+//     font-size: 28px;
+//     line-height: 1.17;
+//     text-align: center;
+//     color: $titleTextColor;
+    
+
+//     margin-bottom: 50px;
+//     @include desktop{
+//         font-size: 36px;
+//     }
+// }
+
+.flex-row{
+    margin: 0 auto;
+    display: block;
+    @include tablet{
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    }
+}
+
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    margin-bottom: 16px;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: dotted;
+    padding: 3px;
+}
+
+.section-thumb{
+    margin: 0 auto;
+    padding: 0 5px;
+
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    gap: 8px;
+
+
+    overflow: overlay;
+
+
+    background-color:white;
+   // align-items: center;
+    
+    width: 400px;
+    height: 600px;
+    @include tablet{
+        width: 600px;
+        height: 400px;
+    }
+
+    @include desktop{
+        width: 680px;
+    }
+}
+
+
+
+
+.section-aim{
+    font-family: "Finger Paint",cursive;
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.section-title{
+    font-family: "Freckle Face",cursive;
+    font-weight: 600;
+    color: $yellowColor;
+    font-size: 32px;
+    line-height: 1.36;
+    max-width: 600px;
+    height: 200px;
+
+    display: flex;
+
+   
+    
+}
+
+.section-info-title{
+    //font-family: "Freckle Face",cursive;
+    font-weight: 600;
+    //color: $yellowColor;
+    font-size: 22px;
+    line-height: 1.36;
+
+    display: flex;
+
+    padding: 5px;
+    
+}
+
+.section-it-title{
+    font-family: "Freckle Face",cursive;
+    font-weight: 600;
+    color: $yellowColor;
+    font-size: 22px;
+    line-height: 1.36;
+
+    display: flex;
+
+    padding: 5px;
+    
+}
+
+.section-info{
+    display: block;
+}
+
+.section__image--xxl{
+    display: block;
+    width: 100%;
+    @include tablet{
+    width: 45%;
+    }
+}
+
+.section-icon{
+    fill:white;
+    width: 32px;
+    height: 32px;
+}
+
+.rotate90{
+    transform: rotate(90deg);
+}
+
+.section-icon-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
