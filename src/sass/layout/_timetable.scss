@@ -1,7 +1,9 @@
 .timetable__container{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: block;
+    width: 100%;
+    // display: flex;
+    // align-items: center;
+    // gap: 20px;
 }
 
 .timetable-img{
