@@ -2,7 +2,7 @@
     margin: 0 auto;
     padding: 0 6px;
     width: 100%;
-    //height: $mobHeight;
+    height: $mobHeight;
     min-width: 256px;
 
   
@@ -56,9 +56,9 @@
 .hero-top-menu{
     display: block;
     width: 100%;
-    height: 65px;
+    height: auto;
 
-    background-color: red;
+    
 }
 
 .guide__bg{
@@ -73,7 +73,7 @@
     background-size: 460px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image:  url(../images/layout/bookshelf.png);
+    background-image:  url(../images/layout/layout-lesson.png);
 
     @include tablet{
         background-size: 760px;
