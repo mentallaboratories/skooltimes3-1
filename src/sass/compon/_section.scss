@@ -93,7 +93,6 @@
     font-size: 32px;
     line-height: 1.36;
     max-width: 600px;
-    height: 200px;
 
     display: flex;
 
@@ -134,9 +133,6 @@
 .section__image--xxl{
     display: block;
     width: 100%;
-    @include tablet{
-    width: 45%;
-    }
 }
 
 .section-icon{
