@@ -5,46 +5,20 @@
     width: 100%;
     height: inherit;
     min-width: 256px;
-
+    margin: 0 auto;
     background-color: rgb(122, 76, 6);
 
   
     max-width: 1200px;
     display: block;
-    //display: flex;
-    //align-items: baseline;
-    @include tablet{
-        height: 90px;
-    }
-    
-   
-    @include desktop{
-        
-         //height: 450px;
-    }
-           
 }
 
 
 
 .header__container{
     display: flex;
-//    width: 100%;
-//    height: 100%;
-align-items: center;
-  justify-content:space-between;
-    
-    @include mobile{
-        
-        
-    align-items:center;
-    
-    }
-
-    @include tablet{
-        align-items:baseline;
-    }
-
+    align-items: center;
+    justify-content:space-between;
 
 }
 

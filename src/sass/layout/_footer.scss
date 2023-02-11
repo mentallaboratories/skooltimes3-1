@@ -1,19 +1,18 @@
 /* !!!-------------footer-----------!!!! */
 .footer {
-    
-
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(122, 76, 6);
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: rgb(122, 76, 6);;
+    
     
 }
 
 .footer-container{
     display: flex;
-
-   
     border-radius: 0 0 15px 15px;
-
     padding: 30px 15px;
     gap: 30px;
     @media screen and (max-width:479px) {
