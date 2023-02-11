@@ -1,4 +1,5 @@
 const { equal } = require("joi");
+const listEl = document.querySelector('#iconsList');
 
 const icons={
     name:[
@@ -63,5 +64,5 @@ markup += itemEl;
 
 console.log(markup);
 
-const listEl = document.querySelector('#iconsList');
+
 //listEl.innerHTML = markup;

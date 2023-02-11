@@ -13,9 +13,10 @@
     flex-wrap: wrap;
     //justify-content: center;
     align-items: center;
-    gap: 27px;
+    gap: 7px;
     overflow: hidden;
-    row-gap: 10px;
+    row-gap: 3px;
+    color: white;
     // & > li{
     //     display: block;
     // }
@@ -24,4 +25,17 @@
 .recent-link{
     font-size: 10px;
     line-height: 1.16;
+    color: white;
+    padding: 0 3px;
+
+    height: 12px;
+    display: block;
+    border-radius: 6px;
+    border: 1px dotted white;
+}
+.recent-link-title{
+    color: white;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: underline;
 }

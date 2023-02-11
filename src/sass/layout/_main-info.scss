@@ -33,8 +33,9 @@
 
 .main-info__item{
     display: flex;
-    
+    background-color: white;
     gap: 5px;
+    padding: 3px;
 
     @media screen and(max-width:479px) {
         flex-direction: column;
@@ -54,23 +55,25 @@
 
 
 .category__title{
-    color: tomato;
+    color: white;
     font-family: 'Pangolin', cursive;
     font-size: 12px;
     text-transform: uppercase;
 
     display: inline-block;
-    background-color: white;
+    background-color: $darkBrownColor;
     border-radius: 3px;
     padding: 3px;
 }
 
 .main-info__content{
-    color: white;
+    color: $darkBrownColor;
+    font-size: 13px;
+    line-height: 1.13;
 }
 
 .lesson__name{
-    color: white;
+    color: $darkBrownColor;
     font-family: 'Finger Paint', cursive;
     font-size: 24px;
     text-transform: uppercase;
@@ -84,8 +87,8 @@
 
     display: block;
     width: 100%;
-    margin-bottom: 21px;
+    margin-bottom: 7px;
     padding: 3px 12px;
     border-radius: 9px 9px 0 0;
-    background-color: rgba(245, 240, 240, 0.5);
+    background-color: $darkBrownColor;
 }
