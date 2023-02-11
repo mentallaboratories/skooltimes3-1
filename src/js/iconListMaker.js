@@ -7,8 +7,8 @@ const icons={
         "question",
         "multiply",
         "minus",
-        "plus",
-        "exclamation",
+        //"plus",
+        "exlamation",
         "equals",
         "dot",
         "divide",
@@ -64,4 +64,4 @@ markup += itemEl;
 console.log(markup);
 
 const listEl = document.querySelector('#iconsList');
-listEl.innerHTML = markup;
+//listEl.innerHTML = markup;
