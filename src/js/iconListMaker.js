@@ -1,4 +1,3 @@
-const { equal } = require("joi");
 const listEl = document.querySelector('#iconsList');
 
 const icons={
