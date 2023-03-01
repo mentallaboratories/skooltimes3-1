@@ -1,0 +1,2 @@
+!function(){var o={openPopupBtn:document.querySelector("[data-popup-open]"),closePopupBtn:document.querySelector("[data-popup-close]"),popup:document.querySelector("[data-popup]"),body:document.querySelector("body")};function e(){o.popup.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openPopupBtn.addEventListener("click",e),o.closePopupBtn.addEventListener("click",e)}();
+//# sourceMappingURL=storage.d7131c31.js.map
